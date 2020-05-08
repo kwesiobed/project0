@@ -1,0 +1,36 @@
+$color: red;
+
+    h2{
+      color: $color;
+    }
+
+
+div{
+
+  h4{
+    color: red;
+  }
+
+  h6{
+    font-weight: bold;
+
+  }
+
+
+}
+
+
+%message{
+
+  color: white;
+  font-size: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+
+
+
+.warning{
+  @extend  %message;
+  background-color: red;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home &raquo; Fountain Gate Academy</title>
+
+  <!-- bootstrap Styling reference-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Css Styling reference-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body style="height:1500px">
+  <br>
+  <div class="t_logo">
+  <center>  <img id="logo"  src="pics/FOGA.png" ></center>
+  <br>
+  </div>
+
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <img id="logo1"  src="pics/FOGA2.png" >
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html"><b>HOME</b></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="admission.html"><b>ADMISSIONS</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus.html"><b>ABOUT US</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contactus.html"><b>CONTACT US</b></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- SlideShow -->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="pics/SLD1.jpg" style="width:100%">
+  <div class="text">New Branch</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="pics/SLD2.jpg" style="width:100%">
+  <div class="text">Career Day</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="pics/SLD3.jpg" style="width:100%">
+  <div class="text">Memories</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<div class="container" style="margin-top:50px">
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4>Vision</h4>
+      <p>To develop future leaders with integrity and the fear of God while creating and disseminating new
+         knowledge through research and innovation in partnership with industry, commerce and the public sector.</p>
+
+    </div>
+
+    <div class="col-md-4">
+      <h4>Mission</h4>
+      <p>To become a distinguished teaching and research-oriented Christian Institution known for excellence in Maths, Science
+        , Moral, Arts and Innovation.</p>
+
+    </div>
+    <div class="col-md-4">
+      <h4>Core Values</h4>
+        <div >
+      <h6>Godliness</h6>
+        </div>
+        We uphold to develop into our staff and students, faith in God through Jesus Christ as Lord and Saviour, and the Bible
+        as the basis of all rules and conduct.
+        <div >
+          <h6>Honesty</h6>
+        </div>
+
+      We uphold to remain transparent, open and accountable....<a href="corevalues.html"> Read More</a>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="footer">
+<br>
+    <div class="container" style="margin-top:50px">
+
+      <div class="row">
+        <div class="col-md-4">
+      <p >  <a class="f_link" href="admission.html"> Admission Procedure</a></p>
+      <p >  <a class="f_link" href="#"> Academic Calender</a></P>
+      <p >  <a class="f_link" href="#"> Examinations</a></p>
+
+        </div>
+
+        <div class="col-md-4">
+          <h3>Contact Us</h3>
+          <p>
+            Location Address: Off Nsawam Rd Sarpeiman Ablohman (Near the Mosque)
+            Postal Address: P.O. Box Dk 66, Darkuman, Ghana Telephone: Main Line: +233 26 053 1854 |+233 54 613 5190 Email: fountaingateaca@gmail.com </p>
+
+        </div>
+
+      </div>
+    </div>
+    <br><br><br><br><br><br><br>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--Javascript for slideshow-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2050); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+</body>
+</html>
